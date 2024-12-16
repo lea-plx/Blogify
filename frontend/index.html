@@ -3,18 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blogify</title>
   <link rel="stylesheet" href="style.css">
+  <title>Blogify - Créez vos articles</title>
 </head>
 <body>
-  <h1>Bienvenue sur Blogify</h1>
-  <div id="articles"></div>
-  <h2>Ajouter un article</h2>
-  <form id="articleForm">
-    <input type="text" id="title" placeholder="Titre" required />
-    <textarea id="content" placeholder="Contenu" required></textarea>
-    <button type="submit">Publier</button>
-  </form>
+  <header>
+    <h1>Blogify</h1>
+    <p>Partagez vos idées avec le monde</p>
+  </header>
+  <main class="container">
+    <section class="form-section">
+      <h2>Ajouter un article</h2>
+      <form id="addArticleForm">
+        <div class="form-group">
+          <label for="articleTitle">Titre</label>
+          <input type="text" id="articleTitle" placeholder="Titre de l'article" required>
+        </div>
+        <div class="form-group">
+          <label for="articleContent">Contenu</label>
+          <textarea id="articleContent" placeholder="Contenu de l'article" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn">Ajouter l'article</button>
+      </form>
+    </section>
+    <section class="articles-section">
+      <h2>Vos articles</h2>
+      <div id="articlesList"></div>
+    </section>
+  </main>
+  <footer>
+    <p>© 2024 Blogify. Tous droits réservés.</p>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>

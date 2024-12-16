@@ -1,0 +1,12 @@
+# Ignorer les dépendances Node.js
+node_modules/
+
+# Fichiers de log
+*.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Configuration Docker
+*.env
