@@ -45,4 +45,3 @@ app.post('/articles', (req, res) => {
 app.listen(5000, () => {
   console.log('Serveur démarré sur http://localhost:5000');
 });
-
